@@ -6,7 +6,7 @@ import Database from "better-sqlite3";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync } from "node:fs";
-import { dirname, join } from "node:path";
+import { dirname } from "node:path";
 import type { AnthropicMessageRequest } from "../types/anthropic.ts";
 import { appConfig } from "./config.ts";
 import { createChildLogger } from "./logger.ts";
@@ -122,12 +122,4 @@ export function ensureChatId(conversationKey: string): string | null {
     );
     return null;
   }
-}
-
-export function defaultSessionStorePath(): string {
-  return join(
-    process.env.HOME || "/tmp",
-    ".claude-cursor",
-    "cursor-proxy-sessions.db"
-  );
 }

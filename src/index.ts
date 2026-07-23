@@ -1,5 +1,5 @@
 /**
- * Entry point for cursor-proxy
+ * Entry point for claude-cursor
  * OpenAI-compatible API proxy wrapping Cursor agent CLI
  */
 
@@ -7,7 +7,7 @@ import { logger } from "./utils/logger.ts";
 import { createServer, startServer, stopServer } from "./server.ts";
 
 async function main() {
-  logger.info("Starting cursor-proxy...");
+  logger.info("Starting claude-cursor...");
 
   const server = await createServer();
 

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/tzachbon/claude-cursor/security/advisories/new
+    about: Report vulnerabilities privately instead of opening a public issue.
+  - name: Setup documentation
+    url: https://github.com/tzachbon/claude-cursor/blob/main/docs/getting-started.md
+    about: Review installation and configuration before filing a setup issue.
