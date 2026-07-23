@@ -9,7 +9,7 @@ Copy the hook into your Claude configuration directory:
 
 ```sh
 mkdir -p "$HOME/.claude-cursor/hooks"
-cp examples/claude-code/hooks/cursor-model-policy.mjs \
+cp hooks/cursor-model-policy.mjs \
   "$HOME/.claude-cursor/hooks/cursor-model-policy.mjs"
 ```
 

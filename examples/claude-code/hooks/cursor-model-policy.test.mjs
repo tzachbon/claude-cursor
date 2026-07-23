@@ -3,7 +3,10 @@
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
 
-const hookPath = new URL("./cursor-model-policy.mjs", import.meta.url);
+const hookPath = new URL(
+  "../../../hooks/cursor-model-policy.mjs",
+  import.meta.url
+);
 const result = spawnSync(process.execPath, [hookPath.pathname], {
   encoding: "utf8",
   input: JSON.stringify({ hook_event_name: "SessionStart" }),

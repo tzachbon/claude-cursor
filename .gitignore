@@ -24,5 +24,8 @@
 !examples/
 !examples/**
 
+!hooks/
+!hooks/cursor-model-policy.mjs
+
 !src/
 !src/**
