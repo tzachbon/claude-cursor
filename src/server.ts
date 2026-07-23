@@ -37,7 +37,7 @@ export async function createServer(): Promise<FastifyInstance> {
   // Root endpoint
   fastify.get("/", async () => {
     return {
-      name: "cursor-proxy",
+      name: "claude-cursor",
       version: "1.0.0",
       description: "OpenAI and Anthropic compatible API proxy for Cursor",
       mode: getUpstreamState().activeMode,

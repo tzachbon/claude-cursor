@@ -1,0 +1,61 @@
+name: Bug report
+description: Report reproducible behavior in the bridge
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include prompts, credentials, tokens, or private data.
+        Report security issues through the repository Security tab.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the observed and expected behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Provide the smallest sanitized request or sequence that reproduces the problem.
+      render: shell
+    validations:
+      required: true
+
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Include claude-cursor commit, Node.js, client, and Cursor Agent versions.
+      placeholder: "claude-cursor 1.0.0, Node 22.18.x, Claude Code x.y, Agent x.y"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: api
+    attributes:
+      label: API surface
+      options:
+        - Anthropic Messages
+        - OpenAI Chat Completions
+        - Model discovery
+        - Metrics or health
+        - Claude Code hook example
+        - Other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed prompts, credentials, tokens, and private information.
+          required: true
+        - label: This is not a security vulnerability.
+          required: true

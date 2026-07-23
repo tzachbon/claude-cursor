@@ -1,22 +1,28 @@
-# This repository lives inside a Claude/Cursor runtime directory.
-# Ignore everything by default and allow only reviewed public files.
+# This repository can live inside a Claude/Cursor runtime directory.
+# Ignore everything by default and allow only reviewed public project files.
 *
 
+!.editorconfig
+!.env.example
 !.gitignore
-!README.md
+!.nvmrc
+!CODE_OF_CONDUCT.md
+!CONTRIBUTING.md
 !LICENSE
-!settings.example.json
+!README.md
+!SECURITY.md
+!package-lock.json
+!package.json
+!tsconfig.json
 
-!hooks/
-hooks/*
-!hooks/cursor-model-policy.mjs
-!hooks/cursor-model-policy.test.mjs
+!.github/
+!.github/**
 
-!proxy/
-!proxy/**
-proxy/.env
-proxy/debug/
-proxy/node_modules/
-proxy/*.db
-proxy/*.db-shm
-proxy/*.db-wal
+!docs/
+!docs/**
+
+!examples/
+!examples/**
+
+!src/
+!src/**

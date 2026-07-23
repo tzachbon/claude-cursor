@@ -1,0 +1,55 @@
+{
+  "name": "claude-cursor",
+  "version": "1.0.0",
+  "description": "Local Anthropic and OpenAI-compatible bridge to the Cursor Agent CLI",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node src/index.ts",
+    "dev": "node --watch src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run src",
+    "test:watch": "vitest src",
+    "test:hook": "node examples/claude-code/hooks/cursor-model-policy.test.mjs",
+    "check": "npm run typecheck && npm test && npm run test:hook"
+  },
+  "keywords": [
+    "anthropic",
+    "claude-code",
+    "cursor",
+    "cursor-agent",
+    "llm",
+    "llm-proxy",
+    "openai",
+    "proxy",
+    "typescript"
+  ],
+  "author": "Zach Bonfil",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzachbon/claude-cursor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tzachbon/claude-cursor/issues"
+  },
+  "homepage": "https://github.com/tzachbon/claude-cursor#readme",
+  "dependencies": {
+    "better-sqlite3": "^12.6.2",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.10.0",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.10.7",
+    "typescript": "^5.7.3",
+    "vitest": "^4.1.10"
+  }
+}
