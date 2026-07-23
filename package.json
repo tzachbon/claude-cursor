@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/tzachbon/claude-cursor#readme",
   "dependencies": {
-    "better-sqlite3": "^12.6.2",
+    "better-sqlite3": "^13.0.1",
     "dotenv": "^16.4.5",
     "fastify": "^5.10.0",
     "pino": "^9.6.0",
