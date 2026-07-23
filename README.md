@@ -10,6 +10,11 @@ clients use models available through the Cursor Agent CLI.
 > This is an unofficial community project. It is not affiliated with, endorsed
 > by, or supported by Anthropic or Cursor.
 
+<img width="727" height="357" alt="image" src="https://github.com/user-attachments/assets/3c2ccd5a-2213-43df-a17a-9b372e8ab8d5" />
+<img width="760" height="370" alt="image" src="https://github.com/user-attachments/assets/dc37c3a9-6259-4f89-b355-4b1fd1f8b8e6" />
+
+
+
 ## Why
 
 Claude Code speaks the Anthropic Messages API, while many other tools speak the
