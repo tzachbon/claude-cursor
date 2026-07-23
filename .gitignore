@@ -4,9 +4,19 @@
 
 !.gitignore
 !README.md
+!LICENSE
 !settings.example.json
 
 !hooks/
 hooks/*
 !hooks/cursor-model-policy.mjs
 !hooks/cursor-model-policy.test.mjs
+
+!proxy/
+!proxy/**
+proxy/.env
+proxy/debug/
+proxy/node_modules/
+proxy/*.db
+proxy/*.db-shm
+proxy/*.db-wal
