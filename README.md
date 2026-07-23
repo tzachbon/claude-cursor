@@ -13,7 +13,35 @@ clients use models available through the Cursor Agent CLI.
 <img width="727" height="357" alt="image" src="https://github.com/user-attachments/assets/3c2ccd5a-2213-43df-a17a-9b372e8ab8d5" />
 <img width="760" height="370" alt="image" src="https://github.com/user-attachments/assets/dc37c3a9-6259-4f89-b355-4b1fd1f8b8e6" />
 
+## Install with your coding agent
 
+Prompt your coding agent to install and configure `claude-cursor` by copying
+this prompt:
+
+```text
+Install claude-cursor from https://github.com/tzachbon/claude-cursor on this
+machine.
+
+1. Check that Node.js 22.18 or newer and the Cursor Agent CLI are installed. If
+   either is missing, explain what is needed and ask before making system-wide
+   changes.
+2. Clone the repository into an appropriate user-owned directory. If it already
+   exists, preserve local changes and update it only when safe.
+3. Run npm ci, then copy .env.example to .env only if .env does not exist.
+4. Keep HOST=127.0.0.1. Do not expose credentials or bind the service to a
+   public or network-facing interface.
+5. Confirm that Cursor Agent is authenticated. If login requires interaction,
+   pause and tell me the exact command or action I need to complete.
+6. Run npm run check.
+7. Start the service in a separate terminal or as a managed background process,
+   then verify GET http://127.0.0.1:8080/health. Record how the service was
+   started so it can be stopped cleanly.
+8. Show me how to launch Claude Code through the bridge and how to stop and
+   restart the service.
+
+Do not overwrite existing configuration without showing me the proposed change
+first.
+```
 
 ## Why
 
