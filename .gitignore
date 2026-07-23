@@ -1,0 +1,12 @@
+# This repository lives inside a Claude/Cursor runtime directory.
+# Ignore everything by default and allow only reviewed public files.
+*
+
+!.gitignore
+!README.md
+!settings.example.json
+
+!hooks/
+hooks/*
+!hooks/cursor-model-policy.mjs
+!hooks/cursor-model-policy.test.mjs

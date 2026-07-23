@@ -1,0 +1,18 @@
+{
+  "availableModels": [
+    "auto",
+    "your-cursor-model-id"
+  ],
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$HOME/.claude-cursor/hooks/cursor-model-policy.mjs\""
+          }
+        ]
+      }
+    ]
+  }
+}
